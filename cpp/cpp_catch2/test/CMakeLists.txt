@@ -1,0 +1,5 @@
+add_executable(test_gilded_rose test_gilded_rose.cpp)
+target_link_libraries(test_gilded_rose lib src gcov)
+#target_link_libraries(test_gilded_rose lib src)
+target_compile_options(test_gilded_rose PRIVATE --coverage)
+add_test(NAME test_gilded_rose COMMAND test_gilded_rose)
