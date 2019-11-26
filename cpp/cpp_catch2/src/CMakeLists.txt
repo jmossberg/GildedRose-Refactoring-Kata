@@ -1,4 +1,4 @@
-add_library(src GildedRose.cpp)
-target_include_directories(src PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_compile_options(src PRIVATE -coverage)
-target_link_libraries(src gcov)
+set(SRC_LIB_NAME src)
+add_library(${SRC_LIB_NAME})
+target_sources(${SRC_LIB_NAME} PRIVATE GildedRose.cc)
+target_include_directories(${SRC_LIB_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

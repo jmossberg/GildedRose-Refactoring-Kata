@@ -1,21 +1,24 @@
-#ifndef GILDED_ROSE_REFACTORING_KATA_1_GILDEDROSE_H
-#define GILDED_ROSE_REFACTORING_KATA_1_GILDEDROSE_H
+#include <string>
+#include <vector>
 
+using namespace std;
 
-#include <ostream>
-
-class GildedRose {
+class Item
+{
 public:
-    GildedRose(int value);
-    int getValue() const;
-    int getAge() const;
-    void setAge(int age);
-
-    friend std::ostream &operator<<(std::ostream &os, const GildedRose &rose);
-private:
-    int value;
-    int age;
+    string name;
+    int sellIn;
+    int quality;
+    Item(string name, int sellIn, int quality) : name(name), sellIn(sellIn), quality(quality) 
+    {}
 };
 
+class GildedRose
+{
+public:
+    vector<Item> & items;
+    GildedRose(vector<Item> & items);
+    
+    void updateQuality();
+};
 
-#endif //GILDED_ROSE_REFACTORING_KATA_1_GILDEDROSE_H
