@@ -1,0 +1,5 @@
+set(TEST_NAME GildedRoseUnitTests)
+add_executable(${TEST_NAME})
+target_sources(${TEST_NAME} PRIVATE GildedRoseUnitTests.cc)
+target_link_libraries(${TEST_NAME} src gtest gtest_main)
+add_test(NAME ${TEST_NAME} COMMAND ${TEST_NAME})
