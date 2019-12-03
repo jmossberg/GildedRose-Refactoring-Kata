@@ -1,5 +1,5 @@
-set(TEST_NAME GildedRoseUnitTests)
+set(TEST_NAME GildedRoseCatch2UnitTests)
 add_executable(${TEST_NAME})
-target_sources(${TEST_NAME} PRIVATE GildedRoseUnitTests.cc)
+target_sources(${TEST_NAME} PRIVATE GildedRoseCatch2UnitTests.cc)
 target_link_libraries(${TEST_NAME} lib src)
 add_test(NAME ${TEST_NAME} COMMAND ${TEST_NAME})
