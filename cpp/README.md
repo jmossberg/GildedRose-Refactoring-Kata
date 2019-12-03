@@ -20,7 +20,7 @@ The example below shows how to build and run an [approval test](https://github.c
     $ cmake --build .
     $ ctest -V
 
-The example below shows how to build a traditional unit test with the [Googletest](https://github.com/google/googletest) test framework:
+The example below shows how to build and run a traditional unit test with the [Googletest](https://github.com/google/googletest) test framework:
 
     $ cd ${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/cpp_googletest/cpp_googletest_unittest/
     $ mkdir build
@@ -39,7 +39,7 @@ The example below shows how to build and run an [approval test](https://github.c
 3. Select folder `${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/cpp_catch2/cpp_catch2_approvaltest/`
 4. Select menu `Run - 'GildedRoseCatch2ApprovalTests'`
 
-The example below shows how to build a traditional unit test with the [Googletest](https://github.com/google/googletest) test framework in the [CLion IDE](https://www.jetbrains.com/clion/):
+The example below shows how to build and run a traditional unit test with the [Googletest](https://github.com/google/googletest) test framework in the [CLion IDE](https://www.jetbrains.com/clion/):
 
 1. Start CLion
 2. Select menu `File - Open...`
