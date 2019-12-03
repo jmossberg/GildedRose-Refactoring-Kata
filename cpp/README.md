@@ -8,6 +8,8 @@ The C++ version of the Gilded Rose refactoring kata is available in four version
 3. Traditional unit test with the [Googletest](https://github.com/google/googletest) test framework in the `cpp_googletest/cpp_googletest_unittest` folder.
 4. [Approval tests](https://github.com/approvals/ApprovalTests.cpp) with the [Googletest](https://github.com/google/googletest) test framework in the `cpp_googletest/cpp_googletest_unittest` folder.
 
+The `GildedRose.cc` file, i.e. the code under test, is identical in all four versions.
+
 ## How to build and run tests in a terminal
 All four versions are built and run in the same way using [CMake](https://cmake.org/) in a terminal.
 
