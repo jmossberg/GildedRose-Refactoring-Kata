@@ -19,8 +19,6 @@ if (NOT googletest_POPULATED)
   add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR})
 endif()
 
-
 enable_testing()
-add_subdirectory(lib)
 add_subdirectory(src)
 add_subdirectory(test)
