@@ -8,10 +8,10 @@ The C++ version of the Gilded Rose refactoring kata is available in four version
 3. Traditional unit test with the [Googletest](https://github.com/google/googletest) test framework in the `cpp_googletest/cpp_googletest_unittest` folder.
 4. [Approval tests](https://github.com/approvals/ApprovalTests.cpp) with the [Googletest](https://github.com/google/googletest) test framework in the `cpp_googletest/cpp_googletest_unittest` folder.
 
-## How to build and run tests using in a Terminal
-All four versions are built and run in the same way using [CMake](https://cmake.org/).
+## How to build and run tests in a terminal
+All four versions are built and run in the same way using [CMake](https://cmake.org/) in a terminal.
 
-The example below shows how to build [approval tests](https://github.com/approvals/ApprovalTests.cpp) with the [Catch2](https://github.com/catchorg/Catch2) test framework:
+The example below shows how to build and run an [approval test](https://github.com/approvals/ApprovalTests.cpp) with the [Catch2](https://github.com/catchorg/Catch2) test framework:
 
     $ cd ${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/cpp_catch2/cpp_catch2_approvaltest/
     $ mkdir build
@@ -19,3 +19,30 @@ The example below shows how to build [approval tests](https://github.com/approva
     $ cmake ..
     $ cmake --build .
     $ ctest -V
+
+The example below shows how to build a traditional unit test with the [Googletest](https://github.com/google/googletest) test framework:
+
+    $ cd ${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/cpp_googletest/cpp_googletest_unittest/
+    $ mkdir build
+    $ cd build
+    $ cmake ..
+    $ cmake --build .
+    $ ctest -V
+
+## How to build and run tests using the [CLion IDE](https://www.jetbrains.com/clion/)
+All four versions are built and run in similar way using the [CLion IDE](https://www.jetbrains.com/clion/).
+
+The example below shows how to build and run an [approval test](https://github.com/approvals/ApprovalTests.cpp) with the [Catch2](https://github.com/catchorg/Catch2) test framework in the [CLion IDE](https://www.jetbrains.com/clion/):
+
+1. Start CLion
+2. Select menu `File - Open...`
+3. Select folder `${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/cpp_catch2/cpp_catch2_approvaltest/`
+4. Select menu `Run - 'GildedRoseCatch2ApprovalTests'`
+
+The example below shows how to build a traditional unit test with the [Googletest](https://github.com/google/googletest) test framework in the [CLion IDE](https://www.jetbrains.com/clion/):
+
+1. Start CLion
+2. Select menu `File - Open...`
+3. Select folder `${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/cpp_googletest/cpp_googletest_unittest/`
+4. Select menu `Run - 'GildedRoseGoogletestUnitTests'`
+
