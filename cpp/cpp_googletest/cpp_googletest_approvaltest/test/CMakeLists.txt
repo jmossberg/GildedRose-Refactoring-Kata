@@ -1,6 +1,6 @@
 set(TEST_NAME GildedRoseGoogletestApprovalTests)
 add_executable(${TEST_NAME})
 target_sources(${TEST_NAME} PRIVATE googletest_approval_main.cc GildedRoseGoogletestApprovalTests.cc)
-#target_link_libraries(${TEST_NAME} src gtest gtest_main)
 target_link_libraries(${TEST_NAME} lib src gtest)
+set_property(TARGET ${TEST_NAME} PROPERTY CXX_STANDARD 17)
 add_test(NAME ${TEST_NAME} COMMAND ${TEST_NAME})
