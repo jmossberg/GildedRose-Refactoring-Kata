@@ -63,5 +63,5 @@ The example below shows how to build and run an [approval test](https://github.c
 3. Select folder `${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/cpp_catch2/cpp_catch2_approvaltest/`
 4. Wait for message `CMake generation finished.` in the CMake output window at the bottom
 5. Select `GildedRoseCatch2ApprovalTests.exe` in the drop down menu for Startup Items
-6. Select menu `Debug - Start``
+6. Select menu `Debug - Start`
 
