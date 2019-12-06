@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
-project(gilded-rose-refactoring-kata-cpp-googletest-unittest)
+project(gilded-rose-refactoring-kata-cpp)
 
 # Load FetchContent module.
 include(FetchContent)
@@ -29,4 +29,5 @@ endif()
 
 enable_testing()
 add_subdirectory(src)
+add_subdirectory(lib)
 add_subdirectory(test)
