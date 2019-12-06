@@ -14,15 +14,17 @@ FetchContent_Declare(
 # Fetch GoogleTest amd make build scripts available
 if (NOT googletest_POPULATED)
   FetchContent_Populate(googletest)
+endif()
 
-  # Bring the populated content into the build
-  add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR})
+# Bring the populated content into the build
+add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR})
 
-  
-    # Prevent overriding the parent project's compiler/linker
-    # settings on Windows
-    # https://github.com/google/googletest/blob/1110c471cadf9cf40cb735890d67f135d6313471/googletest/README.md#visual-studio-dynamic-vs-static-runtimes
-    set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+# Force Google Test to link the C/C++ runtimes dynamically when
+# building on Visual Studio
+# Link:
+# * https://github.com/google/googletest/tree/release-1.8.1/googletest#visual-studio-dynamic-vs-static-runtimes
+if(MSVC)
+  set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 endif()
 
 enable_testing()
