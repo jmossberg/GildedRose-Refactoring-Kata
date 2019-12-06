@@ -8,7 +8,7 @@ include(FetchContent)
 FetchContent_Declare(
   googletest
   GIT_REPOSITORY https://github.com/google/googletest.git
-  GIT_TAG release-1.8.0
+  GIT_TAG release-1.8.1
 )
 
 # Fetch GoogleTest amd make build scripts available
@@ -17,6 +17,11 @@ if (NOT googletest_POPULATED)
 
   # Bring the populated content into the build
   add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR})
+
+# Prevent overriding the parent project's compiler/linker
+# settings on Windows
+# https://github.com/google/googletest/blob/1110c471cadf9cf40cb735890d67f135d6313471/googletest/README.md#visual-studio-dynamic-vs-static-runtimes
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 endif()
 
 enable_testing()
