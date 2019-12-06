@@ -52,3 +52,12 @@ The example below shows how to build and run a traditional unit test with the [G
 3. Select folder `${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/cpp_googletest/cpp_googletest_unittest/`
 4. Select menu `Run - 'GildedRoseGoogletestUnitTests'`
 
+## How to build and run tests using Visual Studio 2019 
+All four versions are built and run in similar way using Visual Studio 2019. 
+
+The example below shows how to build and run an [approval test](https://github.com/approvals/ApprovalTests.cpp) with the [Catch2](https://github.com/catchorg/Catch2) test framework in Visual Studio 2019:
+
+1. Start Visual Studio 2019
+2. Select `Open a local folder`
+3. Select folder `${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/cpp_catch2/cpp_catch2_approvaltest/`
+4. Select menu `Run - 'GildedRoseCatch2ApprovalTests'`
