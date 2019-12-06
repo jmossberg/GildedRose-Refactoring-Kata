@@ -23,7 +23,7 @@ add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR})
 # building on Visual Studio
 # Link:
 # * https://github.com/google/googletest/tree/release-1.8.1/googletest#visual-studio-dynamic-vs-static-runtimes
-if(MSVC)
+if (MSVC)
   set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 endif()
 
