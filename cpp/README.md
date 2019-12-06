@@ -12,7 +12,8 @@ The `GildedRose.cc` file, i.e. the code under test, is identical in all four ver
 
 ## Prerequisites
 
-CMake version >= 3.13
+* CMake version >= 3.13
+* C++ compiler that support C++17
 
 ## How to build and run tests in a terminal
 All four versions are built and run in the same way using [CMake](https://cmake.org/) in a terminal.
