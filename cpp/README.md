@@ -18,25 +18,36 @@ The `GildedRose.cc` file, i.e. the code under test, is identical in all four ver
 * C++ compiler that support C++17
 
 ## How to build and run tests in a terminal
-All four versions are built and run in the same way using [CMake](https://cmake.org/) in a terminal.
 
-The example below shows how to build and run an [approval test](https://github.com/approvals/ApprovalTests.cpp) with the [Catch2](https://github.com/catchorg/Catch2) test framework:
+### Build tests
 
     $ cd ${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/cpp_catch2/cpp_catch2_approvaltest/
     $ mkdir build
     $ cd build
     $ cmake ..
     $ cmake --build .
-    $ ctest -V
 
-The example below shows how to build and run a traditional unit test with the [Googletest](https://github.com/google/googletest) test framework:
+### Show available tests
 
-    $ cd ${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/cpp_googletest/cpp_googletest_unittest/
-    $ mkdir build
-    $ cd build
-    $ cmake ..
-    $ cmake --build .
-    $ ctest -V
+    $ cd ${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/cpp_catch2/cpp_catch2_approvaltest/build
+    $ ctest -N
+    Test project ${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp/build
+      Test #1: GildedRoseCatch2ApprovalTests
+      Test #2: GildedRoseCatch2UnitTests
+      Test #3: GildedRoseGoogletestApprovalTests
+      Test #4: GildedRoseGoogletestUnitTests
+
+### Run all tests
+
+    $ ctest
+
+### Run all tests with verbose output
+
+    $ ctest -VV
+
+### Run specific test with verbose output
+
+    $ ctest -VV --tests-reges Catch2Approval
 
 ## How to build and run tests using the [CLion IDE](https://www.jetbrains.com/clion/)
 All four versions are built and run in similar way using the [CLion IDE](https://www.jetbrains.com/clion/).
