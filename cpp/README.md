@@ -45,7 +45,7 @@ The `GildedRose.cc` file, i.e. the code under test, is identical in all four ver
 
     $ ctest -VV
 
-### Run specific test with verbose output
+### Run a specific test with verbose output
 
     $ ctest -VV --tests-regex Catch2Approval
     UpdateCTestConfiguration  from :/home/jmossberg/git/GildedRose-Refactoring-Kata/cpp/build/DartConfiguration.tcl
