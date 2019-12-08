@@ -16,7 +16,7 @@ if (NOT googletest_POPULATED)
   FetchContent_Populate(googletest)
 endif()
 
-set(gtest_force_shared_crt OFF CACHE BOOL "" FORCE)
+#set(gtest_force_shared_crt OFF CACHE BOOL "" FORCE)
 # Force Google Test to link the C/C++ runtimes dynamically when
 # building on Visual Studio
 # Link:
