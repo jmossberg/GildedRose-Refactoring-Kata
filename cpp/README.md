@@ -1,12 +1,14 @@
 # C++ version of Gilded Rose refactoring kata
 
 ## Introduction
-The C++ version of the Gilded Rose refactoring kata is available in four versions using different test frameworks:
+The C++ version of the Gilded Rose refactoring kata is available in four variants using different test frameworks:
 
-1. Traditional unit test with the [Catch2](https://github.com/catchorg/Catch2) test framework in the `cpp_catch2/cpp_catch2_unittest` folder.
-2. [Approval tests](https://github.com/approvals/ApprovalTests.cpp) with the [Catch2](https://github.com/catchorg/Catch2) test framework in the `cpp_catch2/cpp_catch2_approvaltest` folder.
-3. Traditional unit test with the [Googletest](https://github.com/google/googletest) test framework in the `cpp_googletest/cpp_googletest_unittest` folder.
-4. [Approval tests](https://github.com/approvals/ApprovalTests.cpp) with the [Googletest](https://github.com/google/googletest) test framework in the `cpp_googletest/cpp_googletest_unittest` folder.
+* Catch2 test framework
+  1. Traditional unit test with the [Catch2](https://github.com/catchorg/Catch2) test framework in the `test/cpp_catch2_unittest` folder.
+  2. [Approval tests](https://github.com/approvals/ApprovalTests.cpp) with the [Catch2](https://github.com/catchorg/Catch2) test framework in the `test/cpp_catch2_approvaltest` folder.
+* Google Test framework
+  1. Traditional unit test with the [Googletest](https://github.com/google/googletest) test framework in the `test/cpp_googletest_unittest` folder.
+  2. [Approval tests](https://github.com/approvals/ApprovalTests.cpp) with the [Googletest](https://github.com/google/googletest) test framework in the `test/cpp_googletest_unittest` folder.
 
 The `GildedRose.cc` file, i.e. the code under test, is identical in all four versions.
 
