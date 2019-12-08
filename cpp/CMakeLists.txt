@@ -19,15 +19,6 @@ endif()
 # Bring the populated content into the build
 add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR})
 
-set(gtest_force_shared_crt OFF CACHE BOOL "" FORCE)
-# Force Google Test to link the C/C++ runtimes dynamically when
-# building on Visual Studio
-# Link:
-# * https://github.com/google/googletest/tree/release-1.8.1/googletest#visual-studio-dynamic-vs-static-runtimes
-if (MSVC)
-  set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-endif()
-
 enable_testing()
 add_subdirectory(src)
 add_subdirectory(lib)
