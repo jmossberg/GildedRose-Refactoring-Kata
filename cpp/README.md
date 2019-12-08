@@ -47,7 +47,60 @@ The `GildedRose.cc` file, i.e. the code under test, is identical in all four ver
 
 ### Run specific test with verbose output
 
-    $ ctest -VV --tests-reges Catch2Approval
+$$TestConfiguration  from :${GIT_FOLDER}/git/GildedRose-Refactoring-Kata/cpp/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :${GIT_FOLDER}/git/GildedRose-Refactoring-Kata/cpp/build/DartConfiguration.tcl
+Test project ${GIT_FOLDER}/git/GildedRose-Refactoring-Kata/cpp/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: GildedRoseCatch2ApprovalTests
+
+1: Test command: ${GIT_FOLDER}/git/GildedRose-Refactoring-Kata/cpp/build/test/cpp_catch2_approvaltest/GildedRoseCatch2ApprovalTests
+1: Test timeout computed to be: 10000000
+1: ===============================================================================
+1: test cases: 1 | 1 passed
+1: assertions: - none -
+1: 
+1/1 Test #1: GildedRoseCatch2ApprovalTests ....   Passed    0.00 sec
+
+The following tests passed:
+        GildedRoseCatch2ApprovalTests
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.01 sec
+
+    UpdateCTestConfiguration  from :$ ctest -VV --tests-regex Catch2Approval/git/GildedRose-Refactoring-Kata/cpp/build/DartConfiguration.tcl
+    UpdateCTestConfiguration  from :$ ctest -VV --tests-regex Catch2Approval/git/GildedRose-Refactoring-Kata/cpp/build/DartConfiguration.tcl
+    Test project $ ctest -VV --tests-regex Catch2Approval/git/GildedRose-Refactoring-Kata/cpp/build
+    Constructing a list of tests
+    Done constructing a list of tests
+    Updating test list for fixtures
+    Added 0 tests to meet fixture requirements
+    Checking test dependency graph...
+    Checking test dependency graph end
+    test 1
+        Start 1: GildedRoseCatch2ApprovalTests
+    
+    1: Test command: $ ctest -VV --tests-regex Catch2Approval/git/GildedRose-Refactoring-Kata/cpp/build/test/cpp_catch2_approvaltest/GildedRoseCatch2ApprovalTests
+    1: Test timeout computed to be: 10000000
+    1: ===============================================================================
+    1: test cases: 1 | 1 passed
+    1: assertions: - none -
+    1: 
+    1/1 Test #1: GildedRoseCatch2ApprovalTests ....   Passed    0.00 sec
+    
+    The following tests passed:
+            GildedRoseCatch2ApprovalTests
+    
+    100% tests passed, 0 tests failed out of 1
+    
+    Total Test time (real) =   0.01 sec
+
 
 ## How to build and run tests using the [CLion IDE](https://www.jetbrains.com/clion/)
 All four versions are built and run in similar way using the [CLion IDE](https://www.jetbrains.com/clion/).
