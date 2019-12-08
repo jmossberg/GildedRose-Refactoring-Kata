@@ -54,6 +54,7 @@ The `GildedRose.cc` file, i.e. the code under test, is identical in all four var
 1. Start CLion
 2. Select menu `File - Open...`
 3. Select folder `${GIT_FOLDER}/GildedRose-Refactoring-Kata/cpp`
+4. Select menu `Build - Build Project`
 4. Select menu `Run - Run...`
 4. Select what test variant to run, e.g. `GildedRoseCatch2ApprovalTests`.
 
